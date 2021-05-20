@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ODOO THEME COLORS -->
+    <template id="_assets_primary_variables" inherit_id="web._assets_primary_variables" >
+        <xpath expr="//link[@href='/web/static/src/scss/primary_variables.scss']" position="after">
+            <link href="/doppler_ca/static/src/scss/primary_variables.scss" type="text/scss" rel="stylesheet"/>
+        </xpath>
+    </template>
+    <!-- THEME DEFAULT COLORS -->
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/doppler_ca/static/src/scss/theme_default/_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>
