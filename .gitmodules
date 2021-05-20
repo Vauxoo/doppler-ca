@@ -1,4 +1,0 @@
-[submodule "doppler-ca"]
-	path = doppler-ca
-	url = git@git.vauxoo.com:vauxoo/doppler-ca.git
-	branch = 14.0

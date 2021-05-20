@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+
+    <record id="data_res_partner_invoice_address_doppler_ca" model="res.partner">
+        <field name="type">invoice</field>
+        <field name="parent_id" ref="base.main_partner"/>
+        <field name="street">5800-40 King Street West</field>
+        <field name="city">Toronto</field>
+        <field name="state_id" ref="base.state_ca_on"/>
+        <field name="country_id" ref="base.ca"/>
+    </record>
+
+    <record id="base.main_company" model="res.company">
+        <field name="name">Alamex Elevator LTD</field>
+        <field name="logo" type="base64" file="doppler_ca/static/img/logo.png"/>
+        <field name="street">5800-40 King Street West</field>
+        <field name="city">Toronto</field>
+        <field name="vat">7163 19272  RT0001</field>
+        <field name="currency_id" ref="base.CAD"/>
+        <field name="country_id" ref="base.ca"/>
+        <field name="state_id" ref="base.state_ca_on"/>
+    </record>
+
+</odoo>
